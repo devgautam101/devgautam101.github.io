@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Gautam Ballav das, a professional web developer.">
+    <meta name="keywords" content="web developer, portfolio, Gautam karn">
+    <title>Gautam Karn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Port<span>folio</span></a>
+            <div class="menu-toggle" role="button" aria-label="Toggle navigation" aria-expanded="false">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span class="highlight">Gautam</span></h1>
+                        <p><span>I'm a professional</span> <span id="typewriter" class="typewriter highlight"></span></p></p>
+                    <a href="#contact" class="btn">Contact Me !</a>
+                </div>
+                <div class="hero-image">
+                    <img src="/img/mygif.gif" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-arrow-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who I Am</h3>
+                    <p>Hello! I'm a passionate web developer with over 5 years of experience in creating stunning websites and web applications. I specialize in front-end development, crafting engaging user interfaces that not only look beautiful but also provide exceptional user experiences.</p>
+                    <p>My journey in web development began when I discovered my passion for coding during college. Since then, I've worked with various clients ranging from small businesses to large corporations, helping them establish their online presence and achieve their digital goals.</p>
+                    <h3>My Skills</h3>
+                    <div class="skills">
+                        <span class="skill">HTML5</span>
+                        <span class="skill">CSS3</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">React</span>
+                        <span class="skill">Node.js</span>
+                        <span class="skill">Git</span>
+                        <span class="skill">python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            <div class="services-container">
+                <div class="service-box">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Building responsive and high-performance websites using modern technologies like HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing intuitive and visually appealing user interfaces that enhance user satisfaction.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Ensuring websites work seamlessly across all devices, from desktops to smartphones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="Cyber-Security">Cyber-Security</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <img src="OverloadEx.png" alt="Project 1" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>E-Commerce Site</h3>
+                        <p>A fully responsive online store built with React and Node.js.</p>
+                        <button class="btn" data-modal-target="modal1">View Details</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <img src="/img/mygif.gif" alt="Project 2" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Mobile App</h3>
+                        <p>A cross-platform mobile app developed with React Native.</p>
+                        <button class="btn" data-modal-target="modal2">View Details</button>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="Cyber-Security">
+                    <img src="/img/mygif.gif" alt="Project 3" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Iwifi jammer</h3>
+                        <p>A modern wifi jammer to jam all near by network.</p>
+                        <button class="btn" data-modal-target="modal3">View Details</button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="Cyber-Security">
+                    <img src="mygif.gif" alt="Project 4" loading="lazy" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>pdf-Cracker</h3>
+                        <p>A clean and modern pdf cracker made with python.</p>
+                        <button class="btn" data-modal-target="modal4">View Details</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"John delivered an outstanding website that exceeded our expectations. His attention to detail and responsiveness made the process seamless."</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/70" alt="Author" class="author-img">
+                            <div class="author-info">
+                                <h4>Jane Smith</h4>
+                                <p>CEO, TechCorp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Working with John was a pleasure. His expertise in UI/UX design transformed our product into something truly remarkable."</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/70" alt="Author" class="author-img">
+                            <div class="author-info">
+                                <h4>Mike Johnson</h4>
+                                <p>Product Manager, Innovate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"John's ability to deliver a responsive and fast website on a tight deadline was impressive. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/70" alt="Author" class="author-img">
+                            <div class="author-info">
+                                <h4>Emily Davis</h4>
+                                <p>Founder, StartUp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <div class="control-btn prev"><i class="fas fa-chevron-left"></i></div>
+                    <div class="control-btn next"><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- Testmonial -->
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info-list">
+                        <li><i class="fas fa-envelope"></i> Example@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> 9802568945</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nepal</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://linkedin.com" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form action="https://formspree.io/f/mqaqeqjk" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="_replyto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <input type="hidden" name="_next" value="https://yoursite.com/thank-you.html">
+                    <input type="text" name="_gotcha" style="display: none;">
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section Ends -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-text">
+                <p>Thank you for visiting my portfolio. Let's create something amazing together!</p>
+            </div>
+            <div class="footer-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Gautam. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends -->
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <div class="modal-close"><i class="fas fa-times"></i></div>
+            <div class="modal-body">
+                <img src="mygif.gif" alt="Project 1" class="modal-image">
+                <h3 class="modal-title">E-Commerce Site</h3>
+                <p class="modal-description">A fully responsive e-commerce platform built with React, Node.js, and MongoDB. Features include product filtering, cart management, and secure checkout.</p>
+                <div class="modal-details">
+                    <div class="detail-item">
+                        <h4>Client</h4>
+                        <p>Retail Inc.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Category</h4>
+                        <p>Web Development</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Date</h4>
+                        <p>June 2024</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Technologies</h4>
+                        <p>React, Node.js, MongoDB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <div class="modal-close"><i class="fas fa-times"></i></div>
+            <div class="modal-body">
+                <img src="https://via.placeholder.com/900x400" alt="Project 2" class="modal-image">
+                <h3 class="modal-title">Mobile App</h3>
+                <p class="modal-description">A cross-platform mobile app for task management, developed with React Native and integrated with Firebase for real-time data sync.</p>
+                <div class="modal-details">
+                    <div class="detail-item">
+                        <h4>Client</h4>
+                        <p>TaskMaster</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Category</h4>
+                        <p>Mobile App</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Date</h4>
+                        <p>March 2024</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Technologies</h4>
+                        <p>React Native, Firebase</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+   
+    
+
+
+
+
+
+
+
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <div class="modal-close"><i class="fas fa-times"></i></div>
+            <div class="modal-body">
+                <img src="https://via.placeholder.com/900x400" alt="Project 3" class="modal-image">
+                <h3 class="modal-title">UI Design</h3>
+                <p class="modal-description">A modern and intuitive UI design for a SaaS dashboard, created using Figma and optimized for user engagement.</p>
+                <div class="modal-details">
+                    <div class="detail-item">
+                        <h4>Client</h4>
+                        <p>SaaS Solutions</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Category</h4>
+                        <p>UI/UX Design</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Date</h4>
+                        <p>January 2024</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Technologies</h4>
+                        <p>Figma, Adobe XD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="modal" id="modal4">
+        <div class="modal-content">
+            <div class="modal-close"><i class="fas fa-times"></i></div>
+            <div class="modal-body">
+                <img src="https://via.placeholder.com/900x400" alt="Project 4" class="modal-image">
+                <h3 class="modal-title">Desktop app</h3>
+                <p class="modal-description">A powerful app to manage all thing .</p>
+                <div class="modal-details">
+                    <div class="detail-item">
+                        <h4>Client</h4>
+                        <p>TaskMaster</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Category</h4>
+                        <p>desktop App</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Date</h4>
+                        <p>March 2025</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Technologies</h4>
+                        <p>Elementor,springboot</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="mys.js"></script>
+</body>
+</html>
